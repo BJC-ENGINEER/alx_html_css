@@ -7,6 +7,9 @@ flex-direction: column;
 margin: 0;
 padding: 0;
 height: 100vh; /* ensures the body takes up the full viewport height */
+background-color: #fafafa; /* custom body background */
+color: #333; /* default text color */
+font-family: Arial, sans-serif; /* consistent font */
 }
 
 /* 2. Make <main> a flex container with horizontal stacking */
@@ -21,17 +24,60 @@ article {
 flex: 2;
 overflow-y: auto;
 padding: 1em;
+background-color: #f9f9f9; /* article background */
+border: 1px solid #ddd;
+border-radius: 8px;
 }
 
+/* 4. Aside styles */
 aside {
 flex: 1;
 overflow-y: auto;
 padding: 1em;
+background-color: #f4f4f4; /* aside background */
+border-left: 1px solid #ddd;
 }
 
-/* Optional: Style header and footer for consistency */
+/* 5. Header and footer styling */
 header, footer {
-background-color: #f0f0f0;
+background-color: #333;
+color: white;
 padding: 1em;
 text-align: center;
+}
+
+/* 6. Navigation styles in header */
+header ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+header li {
+margin: 0 1rem;
+}
+
+/* 7. Link styles in header */
+header a {
+color: white;
+text-decoration: none;
+}
+
+header a:hover {
+text-decoration: underline;
+}
+
+/* 8. Logo styling */
+.logo {
+font-size: 2rem;
+font-weight: bold;
+margin-right: 1rem;
+}
+
+/* 9. Additional customization (optional) */
+footer {
+font-size: 0.9rem;
 }
