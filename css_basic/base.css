@@ -13,3 +13,7 @@ margin: 0.5em 0;
 p {
 line-height: 1.6;
 }
+/* Responsive layout: stack main elements vertically on small screens */
+.works_on_smartphone main {
+flex-direction: column;
+}
